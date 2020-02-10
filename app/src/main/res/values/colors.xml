@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFB672</color>
+    <color name="colorPrimaryDark">#FFB672</color>
+    <color name="colorAccent">#FF3E32</color>
+    <color name="background">#FFB672</color>
+    <color name="white">@android:color/white</color>
+    <color name="data_background">#FFF5E5</color>
+    <color name="dark_primary">#FF891B</color>
+    <color name="text_color">#5B5B5B</color>
+    <color name="shimmer_background">#FFF5E5</color>
+    <color name="signUp">#FF3E32</color>
+</resources>

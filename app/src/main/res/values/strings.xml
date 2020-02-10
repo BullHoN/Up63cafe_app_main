@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Up63 Cafe</string>
+    <string name="app_moto">Good Food is Good Mood</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Cart</string>
+    <string name="title_notifications">Settings</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_settings">Settings</string>
+    <string name="burger">Burgers</string>
+    <string name="chowmein">Chowmein  pasta</string>
+    <string name="message">Time you enjoy wasting is not wasted time.</string>
+    <string name="data_error">Unable To Get Data</string>
+    <string name="network_error">Please Check Your Internet Connection</string>
+    <string name="auth_message">Nothing Brings People Together Like Good Food</string>
+</resources>

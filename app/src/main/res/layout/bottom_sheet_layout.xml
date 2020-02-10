@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:paddingHorizontal="24dp"
+    android:paddingBottom="24dp"
+    android:background="@color/data_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:fontFamily="@font/roboto_medium"
+        android:textSize="18sp"
+        android:textColor="@color/dark_primary"
+        android:id="@+id/item_name"
+        android:gravity="center_horizontal"
+        android:text="Item Added to Cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/dark_primary"
+        android:layout_marginTop="8dp"
+        android:id="@+id/go_to_cart"
+        android:text="Go To Cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

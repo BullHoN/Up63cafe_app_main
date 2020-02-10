@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".payment.AddressActivity">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:text="Edit Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/item_text"
+            android:text="Phone No."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/phoneNo"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edit_text"
+            android:padding="16dp"
+            android:hint="Enter 10 digit phone no."
+            android:fontFamily="@font/roboto_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/address_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/item_text"
+            android:text="Address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edit_text"
+            android:id="@+id/address"
+            android:padding="16dp"
+            android:hint="Enter Address"
+            android:fontFamily="@font/roboto_medium"
+            android:ellipsize="end"
+            android:lines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/item_text"
+            android:text="Near By"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_edit_text"
+            android:id="@+id/near_by"
+            android:padding="16dp"
+            android:hint="Near By Address"
+            android:fontFamily="@font/roboto_medium"
+            android:ellipsize="end"
+            android:lines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_data"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/white"
+        android:background="@color/dark_primary"
+        android:layout_marginTop="32dp"
+        android:text="Change"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
