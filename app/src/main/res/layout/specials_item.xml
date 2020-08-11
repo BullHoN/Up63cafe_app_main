@@ -32,6 +32,8 @@
             android:id="@+id/item_name"
             style="@style/item_text"
             tools:text="Crispy Momos"
+            android:lines="1"
+            android:ellipsize="end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
@@ -51,6 +53,8 @@
             <TextView
                 android:id="@+id/time_text"
                 android:text="15 - 20 min"
+                android:lines="1"
+                android:ellipsize="end"
                 style="@style/item_text"
                 android:textColor="@color/dark_primary"
                 android:layout_marginLeft="16dp"

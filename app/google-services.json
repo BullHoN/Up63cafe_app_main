@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:512962986073:android:88da61ab61e21889b77148",
         "android_client_info": {
-          "package_name": "com.example.up63cafe"
+          "package_name": "com.avit.up63cafe"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "512962986073-5l5t8icum9icf9663o6mlnn0hb09tm9n.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.up63cafe",
+            "package_name": "com.avit.up63cafe",
             "certificate_hash": "52e10d217d696f456f42f42970cbafb4ef9b3c30"
           }
         },

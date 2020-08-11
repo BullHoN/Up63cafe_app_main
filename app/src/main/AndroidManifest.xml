@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.up63cafe">
+    package="com.avit.up63cafe">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -12,8 +13,11 @@
         android:roundIcon="@drawable/ic_coffee_cup"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <service
-            android:name=".notification.NotificationService">
+        <activity
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:name=".CoronaActivity"></activity>
+
+        <service android:name=".notification.NotificationService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>

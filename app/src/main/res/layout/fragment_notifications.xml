@@ -83,6 +83,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/privacy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -104,6 +105,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/terms"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -125,6 +127,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/about"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -146,6 +149,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/rateus"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -167,6 +171,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/contact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -184,6 +189,28 @@
                     android:layout_gravity="center_vertical"
                     android:layout_marginLeft="24dp"
                     android:text="Contact Us" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="32sp"
+                    android:layout_height="32sp"
+                    android:src="@drawable/ic_call_black_24dp" />
+
+                <TextView
+                    style="@style/item_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="24dp"
+                    android:text="For Inquiry" />
 
             </LinearLayout>
 

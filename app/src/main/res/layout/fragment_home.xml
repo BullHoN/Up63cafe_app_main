@@ -126,7 +126,7 @@
                             android:layout_height="wrap_content">
 
                             <ImageView
-                                android:src="@drawable/ic_healthy_food"
+                                android:src="@drawable/ic_rolls"
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"/>
 
@@ -135,7 +135,7 @@
                                 android:textColor="@color/colorPrimary"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="80dp"
-                                android:text="Juices"
+                                android:text="Rolls"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"/>
 
@@ -154,7 +154,7 @@
                             <ImageView
                                 android:layout_width="70dp"
                                 android:layout_height="70dp"
-                                android:src="@drawable/ic_milkshake" />
+                                android:src="@drawable/ic_rice" />
 
                             <TextView
                                 style="@style/fancy_text"
@@ -162,7 +162,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="80dp"
-                                android:text="Shakes"
+                                android:text="Biryani"
                                 android:textColor="@color/colorPrimary" />
 
                         </RelativeLayout>

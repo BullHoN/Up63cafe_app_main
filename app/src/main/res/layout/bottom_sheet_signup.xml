@@ -1,76 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="24dp"
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp">
 
-    <TextView
-        android:text="Welcome"
-        android:textSize="30sp"
-        android:textColor="@android:color/black"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
+    <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Create a New Account"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_edit_text"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="12.5dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_edit_text"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12.5dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12.5dp" />
+
+        <CheckBox
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="By Checking You Are Allowing To Our Privacy Policy And Terms And Condition" />
+
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_signup_button"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Signup"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/call"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@android:color/black"
+            android:text="Facing Difficulties Contact : +91 9532455040"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Already have an account ?"
+            android:textColor="@color/signUp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_height="wrap_content"/>
 
-    <TextView
-        android:gravity="center"
-        android:text="Create a New Account"
-        android:textColor="@android:color/darker_gray"
-        android:textSize="25dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="20dp"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:inputType="textPersonName"
-        android:id="@+id/name"
-        android:background="@drawable/shape_edit_text"
-        android:hint="Name"
-        android:padding="12.5dp"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:inputType="textEmailAddress"
-        android:id="@+id/email"
-        android:background="@drawable/shape_edit_text"
-        android:hint="Email"
-        android:padding="12.5dp"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <EditText
-        android:inputType="textPassword"
-        android:id="@+id/password"
-        android:hint="Password"
-        android:padding="12.5dp"
-        android:background="@drawable/shape_edit_text"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="20dp"
-        android:layout_height="wrap_content"/>
-
-    <Button
-        android:id="@+id/signup_button"
-        android:background="@drawable/shape_signup_button"
-        android:textColor="@color/white"
-        android:fontFamily="@font/roboto_bold"
-        android:text="Signup"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="20dp"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/login_button"
-        android:text="Already have an account ?"
-        android:textSize="20sp"
-        android:textColor="@color/signUp"
-        android:layout_marginBottom="10dp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-</LinearLayout>
+</RelativeLayout>
