@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         final Intent authIntent = new Intent(this,AuthActivity.class);
         final Intent homeIntent = new Intent(getApplicationContext(),home.class);
 
+        // Shared Prefrences Data
         String databaseName = SharedPrefNames.SHARED_PREFRENCE_DATABASE_NAME;
         final String user_name = SharedPrefNames.USER_NAME;
         final String allowAuth = SharedPrefNames.ALLOW_ACCESS;
