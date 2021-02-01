@@ -1,12 +1,15 @@
 package com.avit.up63cafe.ui.orders;
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -21,10 +24,12 @@ import java.util.List;
 public class OrderFragmentCustomAdapter extends ArrayAdapter<OrdersItem> {
 
     List<OrdersItem> items;
+    private Context context;
 
     public OrderFragmentCustomAdapter(@NonNull Context context, int resource, @NonNull List<OrdersItem> objects) {
         super(context, resource, objects);
         items = objects;
+        this.context = context;
     }
 
     @NonNull
@@ -35,6 +40,16 @@ public class OrderFragmentCustomAdapter extends ArrayAdapter<OrdersItem> {
             ordersListView = LayoutInflater.from(getContext())
                     .inflate(R.layout.order_item,parent,false);
         }
+
+        LinearLayout phoneInqueryView = ordersListView.findViewById(R.id.call);
+        phoneInqueryView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + "9653090858"));
+                context.startActivity(intent);
+            }
+        });
 
         OrdersItem currentItem = items.get(position);
 

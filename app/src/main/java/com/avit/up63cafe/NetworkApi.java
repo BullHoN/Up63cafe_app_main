@@ -65,4 +65,9 @@ public interface NetworkApi {
     @POST("user/forget")
     Call<ForgetResponseData> sendForgetPasswordRequest(@Body ForgetPasswordPostData data);
 
+    @POST("/googleSignIn")
+    Call<NotificationResponseData> googleSignUp(@Body RegisterPostData data);
+
+
+
 }

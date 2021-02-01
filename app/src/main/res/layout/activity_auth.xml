@@ -39,6 +39,13 @@
 
     </LinearLayout>
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,23 +53,29 @@
         android:orientation="vertical"
         android:padding="24dp">
 
-        <Button
-            android:id="@+id/login_model"
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/sign_in_button"
+            android:text="Sign In / Sign Up With Google"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/shape_login_button"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Login"
-            android:textColor="@color/white" />
+            android:layout_height="wrap_content"/>
 
-        <Button
-            android:id="@+id/signup_model"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:background="@drawable/shape_signup_button"
-            android:text="Sign Up"
-            android:textColor="@color/white" />
+<!--        <Button-->
+<!--            android:id="@+id/login_model"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/shape_login_button"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:text="Login"-->
+<!--            android:textColor="@color/white" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/signup_model"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@drawable/shape_signup_button"-->
+<!--            android:text="Sign Up"-->
+<!--            android:textColor="@color/white" />-->
 
     </LinearLayout>
 
