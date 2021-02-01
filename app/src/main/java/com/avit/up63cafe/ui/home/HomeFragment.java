@@ -62,8 +62,9 @@ public class HomeFragment extends Fragment implements HomeFragmentAdapter.AddToT
 
         checkPrefrenceData();
 
+        // Remove This Thing in Future
         if(!sharedPreferences.contains(SharedPrefNames.BANNER_BOOL)){
-            openCoronaVirusBanner();
+//            openCoronaVirusBanner();
             String Banner_bool = SharedPrefNames.BANNER_BOOL;
 
             SharedPreferences.Editor editor = sharedPreferences.edit();
