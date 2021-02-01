@@ -32,7 +32,6 @@ public interface NetworkApi {
 //    String BASE_URL = "http://192.168.225.20:5000/";
     String BASE_URL = "https://www.up63cafe.com/";
 
-
     @GET("specials")
     Call<ArrayList<SpecialsItem>>  getSpecialItems();
 
